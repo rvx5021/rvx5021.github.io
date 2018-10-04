@@ -3,7 +3,7 @@
 <style>
 
 body {
-  font: 12px Arial;
+  font: 10px sans-serif;
 }
 
 .axis path,
@@ -35,15 +35,15 @@ body {
 <script>
 var data = [ { label: "Data Set 1", 
                x: [0, 1, 2, 3, 4], 
-               y: [0, 1, 2, 3, 4] },  
-            { label: "Data Set 2", 
+               y: [0, 1, 2, 3, 4] }, 
+             { label: "Data Set 2", 
                x: [0, 1, 2, 3, 4], 
-               y: [0, 1, 4, 9, 16] } ];
+               y: [0, 1, 4, 9, 16] } ] ;
 var xy_chart = d3_xy_chart()
     .width(960)
     .height(500)
-    .xlabel("t(time)")
-    .ylabel("CWND size") ;
+    .xlabel("X Axis")
+    .ylabel("Y Axis") ;
 var svg = d3.select("body").append("svg")
     .datum(data)
     .call(xy_chart) ;
@@ -187,4 +187,3 @@ function d3_xy_chart() {
 }
 
 </script>
-</body>  
